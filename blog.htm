@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <!-- 1. Top Bar العلوي -->
+    <div class="Head py-2 border-bottom" style="background-color: #f0efeb">
+      <div
+        class="container d-flex justify-content-between align-items-center fs-7 text-custom-gray"
+        dir="ltr"
+      >
+        <!-- البيانات على الشمال (تحت بعض زي التصميم المطلوب) -->
+        <div class="d-flex flex-column align-items-start gap-1">
+          <div><i class="far fa-envelope me-1"></i> info@ruknalforas.com</div>
+          <div>
+            <i class="fas fa-map-marker-alt me-1"></i> Al-Masani', Riyadh 14714,
+            Saudi Arabia
+          </div>
+        </div>
+
+        <!-- السوشيال ميديا واللغة على اليمين -->
+        <div class="d-flex gap-3 align-items-center">
+          <div class="dropdown me-2">
+            <a
+              class="text-decoration-none text-custom-gray dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              >ar</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-content dropdown-item" href="#">English</a>
+                <a class="dropdown-content dropdown-item" href="#">العربية</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-snapchat"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Navbar الرئيسية -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top shadow-sm"
+      dir="ltr"
+    >
+      <div class="container">
+        <!-- اللوجو -->
+        <a class="navbar-brand" href="#">
+          <img src="Images/logo.jpeg" alt="ركن الفرص" height="50" id="logo" />
+        </a>
+
+        <!-- زرار الموبايل -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- القائمة الرئيسية -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <!-- شلنا dir="rtl" من الـ ul عشان ما يبوظش الـ drop-downs -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold" dir="rtl">
+            <li class="nav-item">
+              <a class="nav-link text-success active" href="home.htm"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-custom-nav" href="about us.htm"
+                >نبذة عنا</a
+              >
+            </li>
+
+            <!-- قائمة تصنيف المنتجات -->
+            <li class="nav-item dropdown custom-dropdown">
+              <a
+                class="nav-link text-custom-nav dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                تصنيف المنتجات
+              </a>
+              <ul class="dropdown-menu text-end border-0 shadow-sm rounded-0">
+                <li><a class="dropdown-item py-2" href="#">الزعفران</a></li>
+
+                <!-- القهوة -->
+                <li class="nested-dropdown" dir="ltr">
+                  <a
+                    class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    القهوة
+                  </a>
+                  <ul class="sub-menu list-unstyled mb-0">
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >قهوة لوفا المقطرة</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >قهوة حب مطحونة</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- الشاي -->
+                <li class="nested-dropdown" dir="ltr">
+                  <a
+                    class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    الشاي
+                  </a>
+                  <ul class="sub-menu list-unstyled mb-0">
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >شاي اخضر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >شاي احمر</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item py-2" href="#">ربيان</a></li>
+                <li><a class="dropdown-item py-2" href="#">عسل الزهور</a></li>
+                <li>
+                  <a class="dropdown-item py-2" href="#"
+                    >رقائق الكروبوك الاسيويه</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="#"
+                    >شكولاتة الفواكه التايلندية</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-custom-nav" href="#">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-custom-nav" href="#">اتصل بنا</a>
+            </li>
+          </ul>
+
+          <!-- رقم التليفون -->
+          <div class="d-flex align-items-center gap-2">
+            <div
+              class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 45px; height: 45px"
+            >
+              <i class="fas fa-phone-alt fs-5"></i>
+            </div>
+            <div class="text-end">
+              <small class="text-custom-gray d-block lh-1">Phone Number</small>
+              <strong class="text-custom-nav">0556004645</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--المسار-->
+
+    <div class="Path">
+      <div class="The_Path">
+        <a href="home.htm" id="main">الرئيسية</a>
+        <p>|</p>
+        <a href="about us.htm" class="about_us">المدونة</a>
+      </div>
+      <p id="big">المدونة</p>
+    </div>
+
+    <!-- Contrainer -->
+    <div class="Container">
+      <div class="Blog_Products">
+        <div id="blog_pruduct">
+
+          <span><i class="far fa-eye me-1"></i> 931 مشاهدة</span>
+          <span class="ms-3"><i class="far fa-calendar-alt me-1"></i> منذ 4 سنوات</span>
+          <div class="Center">
+<img
+            src="Images/chainees green tea.jpeg"
+            alt="Chaines Green Tea"
+            class="blog_product_img"
+          />
+          <p id="blog_product_name">الشاي الاخضر الصيني</p>
+          <p class="blog_product_info">
+            الشاي الصيني من المشروبات الشعبية القديمة والهامة لدى الشعب الصيني،
+            حيث يتم تناوله بشكل منتظم وشبه يومي، وهناك ما يسمى بثقافة الشاي
+            الصيني التي تختلف كثيراً عن الثقافة الأوربية بشأ...
+          </p>
+          </div>
+          
+          <a href="###" class="Read_More">اقراء المزيد</a>
+          <div id="social_share">
+            <span>Social Share</span>
+            <a href="#" class="social-share-icon"><i class="far fa-envelope"></i></a>
+            <a href="#" class="social-share-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-share-icon"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

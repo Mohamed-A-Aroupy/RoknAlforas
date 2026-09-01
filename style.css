@@ -1,0 +1,560 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* NavBar General */
+.Head .dropdown-menu {
+  z-index: 1050;
+}
+
+/* لون النصوص الخفيفة فوق وفي الـ Navbar (الدرجة #777777) */
+.text-custom-gray {
+  color: #777777 !important;
+}
+
+/* لون نصوص روابط القائمة الرئيسية */
+nav.navbar .nav-link.text-custom-nav,
+.text-custom-nav {
+  color: #777777 !important;
+  font-weight: 500;
+}
+
+/* لون الرابط النشط أو عند الـ Hover */
+nav.navbar .nav-link.text-custom-nav:hover,
+nav.navbar .nav-link.active {
+  color: #198754 !important;
+}
+#logo:hover {
+  cursor: pointer;
+}
+
+nav.navbar .navbar-nav .nav-link:hover {
+  color: #28a745 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* 1. القائمة الرئيسية بتظهر بأنيميشن ينزل ناعم لتحت */
+@media (min-width: 992px) {
+  .custom-dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  }
+
+  .custom-dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* 2. القائمة الفرعية (القهوة والشاي) بتنزل بسلاسة وبإزاحة متناسقة في النص */
+.nested-dropdown .sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  background-color: #fcfcfc;
+  padding: 0;
+  transition: max-height 0.35s ease-in-out, opacity 0.35s ease-in-out, padding 0.35s ease-in-out;
+}
+
+.nested-dropdown:hover > .sub-menu {
+  max-height: 150px;
+  opacity: 1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* 3. عناصر القائمة العامة */
+.dropdown-menu .dropdown-item {
+  color: #333;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f4f4f4;
+  color: #198754;
+}
+
+/* 4. تظبيط عناصر القهوة والشاي الفرعية (الأحمر يتحول للأخضر في النص) */
+.text-danger-custom {
+  color: #a94442 !important;
+  text-decoration: none;
+  text-align: center;
+  padding-right: 0 !important;
+  font-size: 0.9rem;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.text-danger-custom:hover {
+  color: #198754 !important;
+  background-color: #edf7f1;
+}
+/* Slider */
+.Slider {
+  position: relative;
+}
+
+#slider_img img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+#next_previous_button {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+#next_previous_button i {
+  margin: 0px 10px;
+  color: black;
+  font-size: 25px;
+  border-radius: 50%;
+  height: 30px;
+  padding-left: 8px;
+  padding-top: 2px;
+  padding-right: 2px;
+}
+#next_previous_button i:hover {
+  background-color: rgba(230, 233, 235, 0.349);
+}
+
+/*About us*/
+
+.About_Us {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#who_are_we {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.The_content_in_about_us {
+  width: 55%;
+  padding: 80px 30px 30px 80px;
+  min-width: 400px;
+  color: rgba(87, 93, 98, 0.66);
+}
+.The_content_in_about_us p {
+  line-height: 1.9;
+  font-weight: 500;
+  text-align: justify;
+  direction: rtl;
+}
+
+#para {
+  direction: rtl;
+  font-weight: 700;
+  color: black;
+}
+#para span {
+  padding: 4px;
+  margin: 2px;
+  background-color: rgb(240, 238, 238);
+  color: rgb(205, 67, 67);
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .About_Us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #who_are_we {
+    order: 1; /* يخليه يظهر الأول فوق */
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .The_content_in_about_us {
+    order: 2; /* يخليه يظهر التاني تحت */
+    width: 100%;
+    padding: 20px;
+    min-width: unset;
+  }
+}
+
+.Horizintal {
+  display: flex;
+  justify-content: center;
+}
+hr {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* خلفية الكروت ولونها الخفيف */
+.feature-card {
+  background-color: #fcfbf7; /* اللون الأوف وايت الخفيف زي الصورة */
+  border: 1px solid #f0eee6;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* انيميشن خفيف لما تماوس على الكارت */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.feature-card p {
+  color: #4a4a4a;
+  font-size: 15px;
+}
+
+/* زعفراني */
+
+.Za3farany_Company {
+  background-color: #fbfaf7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Photo {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  padding: auto;
+  margin: 80px;
+}
+.Photo img {
+  margin: 100px 30px;
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+#year_of_experince {
+  width: 240px;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #fdd062;
+  height: 220px;
+  font-family: "DroidArabic", sans-serif;
+  position: absolute;
+  top: -20px;
+  z-index: 1;
+  padding: 25px;
+  color: #31512a;
+}
+
+#year {
+  font-size: 50px;
+  font-weight: 600;
+}
+.Za3farany_Content i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Za3farany_Content h2 {
+  margin: 20xp 40px 0 0;
+  color: #31512a;
+}
+.Za3farany_Content p {
+  font-size: 20px;
+  color: #777777;
+}
+.Za3farany_Content a {
+  display: block;
+  text-decoration: none;
+  color: #31512a;
+}
+#za3frany_store {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+.Za3farany_Content a:hover {
+  text-decoration: underline;
+  scale: 1.03;
+}
+/* التجاوب مع الشاشات الصغيرة (الموبايل والتابلت) */
+@media (max-width: 992px) {
+  .Za3farany_Company {
+    flex-direction: column; /* يخلي عناصر السكشن تنزل تحت بعض */
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .Photo {
+    width: 100%;
+    max-width: 320px; /* حجم مناسب للصورة في الموبايل */
+    margin: 40px auto 20px auto; /* مسافة مظبوطة للمربع الأصفر فوق */
+  }
+
+  .Photo img {
+    margin: 0;
+    width: 100%;
+  }
+
+  #year_of_experince {
+    width: 140px;
+    height: 140px;
+    top: -20px;
+    right: 50%;
+    transform: translateX(50%); /* يسنتر كارت 12 سنة فوق الصورة بالضبط */
+  }
+
+  .Za3farany_Content {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* الحته الخضره الي في النص */
+.Get_Support .Container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #31512a;
+}
+.support-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.support-item i {
+  font-size: 60px;
+  color: #fdd062;
+  display: inline-block;
+  margin-left: 35px;
+}
+.support-item div p {
+  font-size: 16px;
+  color: #b9c8b5;
+  font-weight: normal;
+  margin-bottom: 15px;
+  line-height: 28px;
+}
+#hide {
+  font-size: 20px;
+  font-weight: 600;
+  color: transparent;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#hide:hover {
+  color: #fff;
+}
+
+
+
+
+
+/* Za3farny Products */
+.Our_Products {
+  width: 100%;
+}
+
+.Za3farany_Products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* عشان المنتجات تنزل تحت بعض لو الشاشة صغرت */
+  gap: 25px;
+  padding: 30px 20px;
+  width: 100%;
+}
+/* الحاوية الرئيسية للعنوان والأيقونة */
+.Our_Products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* الأيقونة النبتة اللي فوق العنوان */
+.Our_Products i {
+  font-size: 40px;
+  color: #31512a;
+  margin-bottom: 10px;
+}
+
+/* اللينك / العنوان نفسه */
+.Our_Products a {
+  font-size: 32px;
+  font-weight: bold;
+  color: #31512a;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.Product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.Product:hover {
+  border-color: #31512a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.Product-actions {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.Product:hover .Product-actions {
+  opacity: 1;
+  visibility: visible;
+}
+.action-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #31512a;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+.action-btn:hover {
+  background-color: #31512a;
+  color: #ffffff;
+}
+.Product p {
+  color: #31512a;
+  font-size: 18px; 
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10;
+  line-height: 1.5;
+}
+.Product p:hover {
+  color: #fdd062;
+  scale: 1.01;
+}
+.Product img {
+  margin: 20px;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.bg-green-box {
+  background-color: #31512a !important;
+}
+
+.footer-links a:hover {
+  color: #31512a !important;
+  font-weight: bold;
+}
+
+.social-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #fff;
+  color: #31512a;
+}
+
+.newsletter-form .btn-success {
+  background-color: #537d4d;
+  border-color: #537d4d;
+}
+
+.newsletter-form .btn-success:hover {
+  background-color: #31512a;
+}
+
+
+
+
+/* scroll to top button  */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(#198754 0deg, #e0e0e0 0deg);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#scrollTopBtn::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+#scrollTopBtn i {
+  position: relative;
+  z-index: 2;
+  color: #198754;
+  font-size: 18px;
+}

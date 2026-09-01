@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About_Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about_us_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <!--Top Bar العلوي -->
+    <div class="Head py-2 border-bottom" style="background-color: #f0efeb">
+      <div
+        class="container d-flex justify-content-between align-items-center fs-7 text-custom-gray"
+        dir="ltr"
+      >
+        <!-- البيانات على الشمال (تحت بعض زي التصميم المطلوب) -->
+        <div class="d-flex flex-column align-items-start gap-1">
+          <div><i class="far fa-envelope me-1"></i> info@ruknalforas.com</div>
+          <div>
+            <i class="fas fa-map-marker-alt me-1"></i> Al-Masani', Riyadh 14714,
+            Saudi Arabia
+          </div>
+        </div>
+
+        <!-- السوشيال ميديا واللغة على اليمين -->
+        <div class="d-flex gap-3 align-items-center">
+          <div class="dropdown me-2">
+            <a
+              class="text-decoration-none text-custom-gray dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              >ar</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-content dropdown-item" href="#">English</a>
+                <a class="dropdown-content dropdown-item" href="#">العربية</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-custom-gray"
+            ><i class="fab fa-snapchat"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Navbar الرئيسية -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top shadow-sm"
+      dir="ltr"
+    >
+      <div class="container">
+        <!-- اللوجو -->
+        <a class="navbar-brand" href="#">
+          <img src="Images/logo.jpeg" alt="ركن الفرص" height="50" id="logo" />
+        </a>
+
+        <!-- زرار الموبايل -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- القائمة الرئيسية -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <!-- شلنا dir="rtl" من الـ ul عشان ما يبوظش الـ drop-downs -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold" dir="rtl">
+            <li class="nav-item">
+              <a class="nav-link text-success active" href="home.htm"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-custom-nav" href="about us.htm">نبذة عنا</a>
+            </li>
+
+            <!-- قائمة تصنيف المنتجات -->
+            <li class="nav-item dropdown custom-dropdown">
+              <a
+                class="nav-link text-custom-nav dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                تصنيف المنتجات
+              </a>
+              <ul class="dropdown-menu text-end border-0 shadow-sm rounded-0">
+                <li><a class="dropdown-item py-2" href="#">الزعفران</a></li>
+
+                <!-- القهوة -->
+                <li class="nested-dropdown" dir="ltr">
+                  <a
+                    class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    القهوة
+                  </a>
+                  <ul class="sub-menu list-unstyled mb-0">
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >قهوة لوفا المقطرة</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >قهوة حب مطحونة</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- الشاي -->
+                <li class="nested-dropdown" dir="ltr">
+                  <a
+                    class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    الشاي
+                  </a>
+                  <ul class="sub-menu list-unstyled mb-0">
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >شاي اخضر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="sub-item py-2 d-block text-danger-custom"
+                        href="#"
+                        >شاي احمر</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item py-2" href="#">ربيان</a></li>
+                <li><a class="dropdown-item py-2" href="#">عسل الزهور</a></li>
+                <li>
+                  <a class="dropdown-item py-2" href="#"
+                    >رقائق الكروبوك الاسيويه</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="#"
+                    >شكولاتة الفواكه التايلندية</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-custom-nav" href="blog.htm">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-custom-nav" href="#">اتصل بنا</a>
+            </li>
+          </ul>
+
+          <!-- رقم التليفون -->
+          <div class="d-flex align-items-center gap-2">
+            <div
+              class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 45px; height: 45px"
+            >
+              <i class="fas fa-phone-alt fs-5"></i>
+            </div>
+            <div class="text-end">
+              <small class="text-custom-gray d-block lh-1">Phone Number</small>
+              <strong class="text-custom-nav">0556004645</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--المسار-->
+
+    <div class="Path">
+      <div class="The_Path">
+        <a href="home.htm" id="main">الرئيسية</a>
+        <p>|</p>
+        <a href="about us.htm" class="about_us">نبذة عنا</a>
+      </div>
+      <p id="big">نبذة عنا</p>
+    </div>
+
+
+    <!-- about us -->
+    <div class="About_Us">
+      <div id="who_are_we">
+        <h2 id="text">عن شركتنا</h2>
+      </div>
+      <div class="The_content_in_about_us">
+        <p>
+          شركة ركن الفرص التجارية | تأسست في عام 2011 تحت أسم مؤسسة ركن الفرص
+          التجارية و بدأت اعمالها مستعينة بحول الله وقوته و مدعمة بخبرة ادارية
+          وتجارية برأس مال بسيط ولكن بفكر طموح وعزيمة على النجاح في استيراد مواد
+          غذائية مميزة تحمل علامات تجارية خاصة مسجله باسم شركتنا من الاسواق
+          العالمية وتوفيرها في السوق السعودي بأسعار منافسة جدا ، وفي عام 2022 تم
+          تحويلها الى شركة شخص واحد شركة سعودية ذات مسئوليه محدوده تمتلك عدة
+          علامات تجارية مسجلة في الهيئة السعودية للملكية الفكرية تستخدمها الشركه
+          حاليا في تسويق منتجاتها الخاصه مثل الشاي الاخضر الصيني ، الشاي الاحمر
+          السيلاني ، الزعفران الاسباني والعسل والماتشا وغيرها وفي عام 2019 تم
+          أنشاء بوابة التسوق الالكتروني تحت أسم متجر زافراني مسجل في منصة معروف
+          برقم 113861 رغبة منا في أن تكون منتجاتنا الخاصه في متناول أيدي
+          المستهلك النهائي بشكل مبسط مستخدما خيارات دفع الكتروني متعدده وطرق
+          توصيل بالتعاون مع شركات شحن معتمدة وبشكل ميسّر لتوفير الوقت والجهد حيث
+          سيجد عميلنا التنوع في المنتجات والسهولة في اختيارها والبحث عنها.
+        </p>
+        <div id="zafarany">
+          <p id="para">
+            زافراني - متجر الكتروني تابع لشركة ركن الفرص التجارية شخص واحد
+          </p>
+          <p id="para">
+            وهي شركة سعودية بسجل تجاري رقم <span>7003067233</span>
+          </p>
+          <p id="para">
+            ومسجلة في ضريبة القيمة المضافة برقم <span>311198864400003</span>
+          </p>
+          <div class="Horizintal"><hr /></div>
+
+          <div class="Cards">
+            <div class="features-section py-4">
+              <div class="container">
+                <div
+                  class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 text-center"
+                >
+                  <!-- كارت 1 -->
+                  <div class="col">
+                    <div class="feature-card p-3 rounded shadow-sm">
+                      <div class="icon-wrapper mb-2">
+                        <i class="fa-solid fa-wheat-awn fs-1 text-success"></i>
+                      </div>
+                      <p class="fw-bold mb-0">منتجات متنوعة</p>
+                    </div>
+                  </div>
+
+                  <!-- كارت 2 -->
+                  <div class="col">
+                    <div class="feature-card p-3 rounded shadow-sm">
+                      <div class="icon-wrapper mb-2">
+                        <i
+                          class="fa-solid fa-apple-whole fs-1 text-success"
+                        ></i>
+                      </div>
+                      <p class="fw-bold mb-0">منتجات صحية</p>
+                    </div>
+                  </div>
+
+                  <!-- كارت 3 -->
+                  <div class="col">
+                    <div class="feature-card p-3 rounded shadow-sm">
+                      <div class="icon-wrapper mb-2">
+                        <i class="fa-solid fa-award fs-1 text-success"></i>
+                      </div>
+                      <p class="fw-bold mb-0">ذات جودة عالية</p>
+                    </div>
+                  </div>
+
+                  <!-- كارت 4 -->
+                  <div class="col">
+                    <div class="feature-card p-3 rounded shadow-sm">
+                      <div class="icon-wrapper mb-2">
+                        <i
+                          class="fa-solid fa-house-chimney fs-1 text-success"
+                        ></i>
+                      </div>
+                      <p class="fw-bold mb-0">مستودعات آمنة</p>
+                    </div>
+                  </div>
+
+                  <!-- كارت 5 -->
+                  <div class="col">
+                    <div class="feature-card p-3 rounded shadow-sm">
+                      <div class="icon-wrapper mb-2">
+                        <i
+                          class="fa-solid fa-truck-ramp-box fs-1 text-success"
+                        ></i>
+                      </div>
+                      <p class="fw-bold mb-0">أدوات احترافية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <br><br>
+
+
+    <!-- za3frany Products -->
+     <div class="Za3farany_Products">
+      <div class="Our_Products">
+        <i class="fa-solid fa-seedling text-success"></i>
+
+        <a href="###">منتجاتنا في متجر زافراني</a>
+      </div>
+      <div class="Product">
+        <img src="Images/29522.jpeg" alt="za3faran" />
+        <div class="Product-actions">
+          <button class="action-btn" title="Add to Card">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="action-btn" title="معاينة">
+            <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+
+        <p>زعفران أبو شال اسباني طبيعي فاخر 4غرام</p>
+      </div>
+      <div class="Product">
+        <img src="Images/30994.jpg" alt="za3faran" />
+        <div class="Product-actions">
+          <button class="action-btn" title="إضافة للسلة">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="action-btn" title="معاينة">
+            <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+
+        <p>زعفران أبوشيبه اسباني طبيعي - 1.5 غرام</p>
+      </div>
+    </div>
+
+
+    <!-- footer  -->
+      <!-- 1. شريط المميزات العلوي (الأبيض) -->
+      <div class="container mb-5">
+        <div
+          class="features-bar bg-white shadow-sm p-4 rounded d-flex justify-content-around align-items-center flex-wrap gap-3"
+        >
+          <!-- اللوجو -->
+          <div class="feature-item">
+            <img
+              src="Images/logo.jpeg"
+              alt="ركن الفرص"
+              class="img-fluid"
+              style="max-height: 50px"
+            />
+          </div>
+          <!-- ميزة 1 -->
+          <div class="feature-item d-flex align-items-center gap-3">
+            <i class="fa-solid fa-wheat-awn fs-2 text-success"></i>
+            <span class="fw-bold text-dark fs-5"
+              >نستخدم أحدث التقنيات في التخزين</span
+            >
+          </div>
+          <!-- ميزة 2 -->
+          <div class="feature-item d-flex align-items-center gap-3">
+            <i class="fa-solid fa-hand-holding-seeding fs-2 text-success"></i>
+            <span class="fw-bold text-dark fs-5">منتجاتنا ذات جودة عالية</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. محتوى الفوتر الرئيسي -->
+      <div class="footer-content py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- العمود الأول: النشرة البريدية (يمين) -->
+            <div class="col-lg-4 col-md-6 text-center text-md-start">
+              <h5 class="fw-bold mb-3">سجل في النشرة البريدية</h5>
+              <p class="text-muted small mb-3">
+                اضف بريدك الالكتروني للحصول على العروض والتخفيضات
+              </p>
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  class="form-control text-center mb-3 py-2"
+                  placeholder="أضف البريد الالكتروني"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-success w-100 py-2 fw-bold"
+                >
+                  اشترك
+                </button>
+              </form>
+            </div>
+
+            <!-- العمود الثاني: الصفحات الأساسية (وسط) -->
+            <div class="col-lg-4 col-md-6 text-center">
+              <h5 class="fw-bold mb-4">الصفحات الأساسية</h5>
+              <ul class="list-unstyled footer-links d-flex flex-column gap-2">
+                <li>
+                  <a href="#" class="text-decoration-none text-secondary"
+                    >نبذة عنا</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-secondary"
+                    >اتصل بنا</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-secondary"
+                    >الشروط والأحكام</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-secondary"
+                    >المدونة</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- العمود الثالث: نبذة عن الشركة والتواصل (شمال - الخلفية الغامقة) -->
+            <div
+              class="col-lg-4 col-md-12 text-center text-lg-end bg-green-box p-4 rounded text-white"
+            >
+              <p class="lh-lg mb-4">
+                تمتلك شركة ركن الفرص التجارية علامات تجارية مسجلة في وزارة
+                التجارة ، لذلك فهي بوابتك الجديدة لجميع احتياجاتك.
+              </p>
+              <h6 class="fw-bold mb-3">التواصل الاجتماعي</h6>
+              <div
+                class="social-icons d-flex justify-content-center justify-content-lg-end gap-2"
+              >
+                <a href="#" class="social-btn"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-btn"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="#" class="social-btn"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+                <a href="#" class="social-btn"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Scroll to top button  -->
+     <button id="scrollTopBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="main.js"></script>
+  </body>
+</html>

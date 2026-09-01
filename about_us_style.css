@@ -1,0 +1,40 @@
+.Path{
+    width: 100%;
+    height: 212px;
+    background-color: #f0efeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Path .The_Path{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap :10px;
+}
+.Path .The_Path a{
+    text-decoration: none;
+    color: #31512a;
+    font-size: 14px;
+    line-height: 28px;
+}
+.Path .The_Path a:hover{
+    scale: 1.06;
+}
+.Path .The_Path #main{
+    font-size: 14px;
+    line-height: 28px;
+    color: #777777; 
+}
+.Path .The_Path p{
+    padding-top: 15px;
+}
+
+.Path #big{
+    color: #31512a;
+    font-family: DroidArabic, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 95px;
+}
