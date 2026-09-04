@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruknalforas</title>
+    <title>Za3farany Classification</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about_us_style.css" />
+    <link rel="stylesheet" href="classification.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
@@ -191,7 +193,9 @@
               <a class="nav-link text-custom-nav" href="blog.htm">المدونة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-custom-nav" href="contact us.htm">اتصل بنا</a>
+              <a class="nav-link text-custom-nav" href="contact us.htm"
+                >اتصل بنا</a
+              >
             </li>
           </ul>
 
@@ -212,222 +216,131 @@
       </div>
     </nav>
 
-    <!--Slider-->
-    <div class="Slider">
-      <div id="slider_img">
-        <img src="Images/17.jpg" alt="عارض صور" id="slider_photo" />
+    <!--المسار-->
+
+    <div class="Path">
+      <div class="The_Path">
+        <a href="home.htm" id="main">الرئيسية</a>
+        <p>|</p>
+        <a href="contact us.htm" class="about_us">معرض المنتجات</a>
       </div>
-      <div id="next_previous_button">
-        <i
-          onclick="next_photo()"
-          id="nextBtn"
-          class="fa-solid fa-chevron-right"
-        ></i>
-        <i
-          onclick="pervious_photo()"
-          id="previousBtn"
-          class="fa-solid fa-chevron-left"
-        ></i>
-      </div>
+      <p id="big">الزعفران</p>
     </div>
 
-    <!--About Us-->
-
-    <div class="About_Us">
-      <div id="who_are_we">
-        <div class="text-success fs-3 mb-1">
-          <i class="fa-solid fa-seedling"></i>
+    <div class="Container">
+      <div class="Classfication_Product">
+        <div id="za3faran_product_img">
+          <img src="Images/za3fran_1.jpg" alt="Za3faran" />
         </div>
-        <h2 id="text">من نحن</h2>
-      </div>
-      <div class="The_content_in_about_us">
-        <p>
-          شركة ركن الفرص التجارية | تأسست في عام 2011 تحت أسم مؤسسة ركن الفرص
-          التجارية و بدأت اعمالها مستعينة بحول الله وقوته و مدعمة بخبرة ادارية
-          وتجارية برأس مال بسيط ولكن بفكر طموح وعزيمة على النجاح في استيراد مواد
-          غذائية مميزة تحمل علامات تجارية خاصة مسجله باسم شركتنا من الاسواق
-          العالمية وتوفيرها في السوق السعودي بأسعار منافسة جدا ، وفي عام 2022 تم
-          تحويلها الى شركة شخص واحد شركة سعودية ذات مسئوليه محدوده تمتلك عدة
-          علامات تجارية مسجلة في الهيئة السعودية للملكية الفكرية تستخدمها الشركه
-          حاليا في تسويق منتجاتها الخاصه مثل الشاي الاخضر الصيني ، الشاي الاحمر
-          السيلاني ، الزعفران الاسباني والعسل والماتشا وغيرها وفي عام 2019 تم
-          أنشاء بوابة التسوق الالكتروني تحت أسم متجر زافراني مسجل في منصة معروف
-          برقم 113861 رغبة منا في أن تكون منتجاتنا الخاصه في متناول أيدي
-          المستهلك النهائي بشكل مبسط مستخدما خيارات دفع الكتروني متعدده وطرق
-          توصيل بالتعاون مع شركات شحن معتمدة وبشكل ميسّر لتوفير الوقت والجهد حيث
-          سيجد عميلنا التنوع في المنتجات والسهولة في اختيارها والبحث عنها.
-        </p>
-        <div id="zafarany">
-          <p id="para">
-            زافراني - متجر الكتروني تابع لشركة ركن الفرص التجارية شخص واحد
-          </p>
-          <p id="para">
-            وهي شركة سعودية بسجل تجاري رقم <span>7003067233</span>
-          </p>
-          <p id="para">
-            ومسجلة في ضريبة القيمة المضافة برقم <span>311198864400003</span>
-          </p>
-          <div class="Horizintal"><hr /></div>
-
-          <div class="Cards">
-            <div class="features-section py-4">
-              <div class="container">
-                <div
-                  class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 text-center"
-                >
-                  <!-- كارت 1 -->
-                  <div class="col">
-                    <div class="feature-card p-3 rounded shadow-sm">
-                      <div class="icon-wrapper mb-2">
-                        <i class="fa-solid fa-wheat-awn fs-1 text-success"></i>
-                      </div>
-                      <p class="fw-bold mb-0">منتجات متنوعة</p>
-                    </div>
-                  </div>
-
-                  <!-- كارت 2 -->
-                  <div class="col">
-                    <div class="feature-card p-3 rounded shadow-sm">
-                      <div class="icon-wrapper mb-2">
-                        <i
-                          class="fa-solid fa-apple-whole fs-1 text-success"
-                        ></i>
-                      </div>
-                      <p class="fw-bold mb-0">منتجات صحية</p>
-                    </div>
-                  </div>
-
-                  <!-- كارت 3 -->
-                  <div class="col">
-                    <div class="feature-card p-3 rounded shadow-sm">
-                      <div class="icon-wrapper mb-2">
-                        <i class="fa-solid fa-award fs-1 text-success"></i>
-                      </div>
-                      <p class="fw-bold mb-0">ذات جودة عالية</p>
-                    </div>
-                  </div>
-
-                  <!-- كارت 4 -->
-                  <div class="col">
-                    <div class="feature-card p-3 rounded shadow-sm">
-                      <div class="icon-wrapper mb-2">
-                        <i
-                          class="fa-solid fa-house-chimney fs-1 text-success"
-                        ></i>
-                      </div>
-                      <p class="fw-bold mb-0">مستودعات آمنة</p>
-                    </div>
-                  </div>
-
-                  <!-- كارت 5 -->
-                  <div class="col">
-                    <div class="feature-card p-3 rounded shadow-sm">
-                      <div class="icon-wrapper mb-2">
-                        <i
-                          class="fa-solid fa-truck-ramp-box fs-1 text-success"
-                        ></i>
-                      </div>
-                      <p class="fw-bold mb-0">أدوات احترافية</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div id="za3faran_product_name">
+          <div id="rate">
+            <span>Original</span>
+            <div id="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>  <!--stars-->
           </div>
+          <a>درزن زعفران أبو شيبه ( 12 علبة * 0،75 جرام )</a> <!--rate-->
+        </div>  <!--za3faran_product_name-->
+      </div>  <!--product-->
+      <div class="Classfication_Product">
+        <div id="za3faran_product_img">
+          <img src="Images/za3fran_1.jpg" alt="Za3faran" />
         </div>
-      </div>
-    </div>
-
-    <div class="Za3farany_Company">
-      <div class="Photo">
-        <img src="Images/zafarany.jpg" alt="Za3farany Logo" />
-        <div id="year_of_experince">
-          <span id="year">12</span>
-          <span
-            >سنة من <br />
-            الخبرة</span
-          >
-        </div>
-      </div>
-
-      <div class="Za3farany_Content">
-        <i class="fa-solid fa-seedling text-success"></i>
-        <h2 id="za3frany_link">زافراني | بوابتك الجديدة للتسوق</h2>
-        <br />
-        <p>
-          بوابتك الجديدة للتسوق الالكتروني بشكل مبسط، والدفع إلكترونيا بشكل
-          ميسّر، لتوفير الوقت والجهد حيث سيجد عميلنا التنوع في المنتجات والسهولة
-          في اختيارها والبحث عنها ، نتمنى لكم رحلة تسوق سعيدة وأن تجدوا كل ما
-          يسركم.
-        </p>
-        <a href="https://zafrani.sa/" id="za3frany_store">متجر زافراني</a>
-        <a href="https://zafrani.sa/">- موقع تابع لشركة ركن التجارية</a>
-        <a href="https://zafrani.sa/"
-          >- شركة سعودية بسجل تجاري رقم 1010297636</a
-        >
-        <a href="https://zafrani.sa/"
-          >- مسجلة في ضريبة القيمة المضافة برقم 300539493600003</a
-        >
-        <a href="https://zafrani.sa/"
-          >- تعمل في تجارة القهوة والزعفران والمنتجات الغذائية</a
-        >
-      </div>
-    </div>
-
-    <div class="Get_Support">
-      <div class="Container">
-        <div class="support-item">
-          <i class="fa-solid fa-phone-volume support-icon"></i>
-          <div id="Phone_Support">
-            <p>احصل على دعم سريع</p>
-            <a href="tel:01023301564" id="hide">01023301564</a>
+        <div id="za3faran_product_name">
+          <div id="rate">
+            <span>Original</span>
+            <div id="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>  <!--stars-->
           </div>
+          <a>درزن زعفران أبو شيبه ( 12 علبة * 0،75 جرام )</a> <!--rate-->
+        </div>  <!--za3faran_product_name-->
+      </div>  <!--product-->
+      <div class="Classfication_Product">
+        <div id="za3faran_product_img">
+          <img src="Images/za3fran_1.jpg" alt="Za3faran" />
         </div>
-
-        <div class="support-item">
-          <i class="fa-regular fa-envelope support-icon"></i>
-          <div id="Phone_Support">
-            <p>تقديم طلب عبر الإنترنت</p>
-            <a href="mailto:alroupyp@gmail.com" id="hide">alroupyp@gmail.com</a>
+        <div id="za3faran_product_name">
+          <div id="rate">
+            <span>Original</span>
+            <div id="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>  <!--stars-->
           </div>
+          <a>درزن زعفران أبو شيبه ( 12 علبة * 0،75 جرام )</a> <!--rate-->
+        </div>  <!--za3faran_product_name-->
+      </div>  <!--product-->
+      <div class="Classfication_Product">
+        <div id="za3faran_product_img">
+          <img src="Images/za3fran_1.jpg" alt="Za3faran" />
         </div>
-      </div>
-    </div>
-
-    <div class="Za3farany_Products">
-      <div class="Our_Products">
-        <i class="fa-solid fa-seedling text-success"></i>
-
-        <a href="###">منتجاتنا في متجر زافراني</a>
-      </div>
-      <div class="Product">
-        <img src="Images/29522.jpeg" alt="za3faran" />
-        <div class="Product-actions">
-          <button class="action-btn" title="Add to Card">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-          <button class="action-btn" title="معاينة">
-            <i class="fa-regular fa-eye"></i>
-          </button>
+        <div id="za3faran_product_name">
+          <div id="rate">
+            <span>Original</span>
+            <div id="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>  <!--stars-->
+          </div>
+          <a>درزن زعفران أبو شيبه ( 12 علبة * 0،75 جرام )</a> <!--rate-->
+        </div>  <!--za3faran_product_name-->
+      </div>  <!--product-->
+      <div class="Classfication_Product">
+        <div id="za3faran_product_img">
+          <img src="Images/za3fran_1.jpg" alt="Za3faran" />
         </div>
-
-        <p>زعفران أبو شال اسباني طبيعي فاخر 4غرام</p>
-      </div>
-      <div class="Product">
-        <img src="Images/30994.jpg" alt="za3faran" />
-        <div class="Product-actions">
-          <button class="action-btn" title="إضافة للسلة">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-          <button class="action-btn" title="معاينة">
-            <i class="fa-regular fa-eye"></i>
-          </button>
+        <div id="za3faran_product_name">
+          <div id="rate">
+            <span>Original</span>
+            <div id="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>  <!--stars-->
+          </div>
+          <a>درزن زعفران أبو شيبه ( 12 علبة * 0،75 جرام )</a> <!--rate-->
+        </div>  <!--za3faran_product_name-->
+      </div>  <!--product-->
+      <div class="Classfication_Product">
+        <div id="za3faran_product_img">
+          <img src="Images/za3fran_1.jpg" alt="Za3faran" />
         </div>
+        <div id="za3faran_product_name">
+          <div id="rate">
+            <span>Original</span>
+            <div id="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>  <!--stars-->
+          </div>
+          <a>درزن زعفران أبو شيبه ( 12 علبة * 0،75 جرام )</a> <!--rate-->
+        </div>  <!--za3faran_product_name-->
+      </div>  <!--product-->
+    </div> <!--container-->
 
-        <p>زعفران أبوشيبه اسباني طبيعي - 1.5 غرام</p>
-      </div>
-    </div>
-<!-- footer  -->
+
+
+    <!-- footer  -->
     <footer class="main-footer pt-5">
       <!-- 1. شريط المميزات العلوي (الأبيض) -->
       <div class="container mb-5">

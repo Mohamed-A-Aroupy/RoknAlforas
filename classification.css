@@ -1,0 +1,66 @@
+.Container{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#za3faran_product_img{
+    display: block;
+    height:auto;
+    border: 1px solid #857f7f73;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#za3faran_product_img img{
+    width: 100%;
+    padding:10px;
+    border: 10px solid #ebeaea73;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.Classfication_Product{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap: 10px;
+    max-width: 280px;
+}
+#za3faran_product_name{
+    
+}
+#rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+#rate span{
+    font-size: 12px; 
+    font-weight: 400;
+    color:#777777;
+}
+#stars{
+    color: #212529;
+}
+#stars i{
+    color: #31512a;
+    font-size: 15px;
+}
+#stars i:hover{
+    cursor: pointer;
+}
+#za3faran_product_name a{
+    text-decoration: none;
+    color: #31512a;
+    font-size: 16px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: right;
+    word-break: break-word;
+}
